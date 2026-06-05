@@ -88,20 +88,18 @@ overflow-x:hidden;
 
 .hero{
 width:100%;
-height:70vh;
-background-image:url('https://i.imgur.com/IP86BB8.png');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+background:#000;
 }
 
-@media (max-width:768px){
-
-.hero{
-height:50vh;
-background-position:center;
-}
-
+.hero img{
+width:100%;
+height:auto;
+display:block;
+max-width:1920px;
 }
 /* Menu */
 
@@ -342,9 +340,13 @@ transform:none;
 </head>
 <body>
 
-<section class="hero"></section>
+<section class="hero">
 
-<section class="hero-text">
+<img
+src="https://i.imgur.com/IP86BB8.png"
+alt="DUJ Group Hero">
+
+</section>
 
 <h1>
 DUJ <span>GROUP</span>
